@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stopWatch</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        body {
+            background: linear-gradient(to right,#0303aa,#00ae71);
+            color: blanchedalmond;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .container {
+            position: relative;
+            width: 265px;
+
+            margin: 12px auto auto auto;
+        }
+
+        .time {
+            font-size: 1.2rem;
+            width: 81px;
+            height: 46px;
+            margin: 2px;
+        }
+
+        .startstop {
+            margin: 5px auto auto 8px;
+            font-size: 20px;
+            border-radius: 12px;
+        }
+
+        .startstop:hover {
+            background-color: black;
+            color: red;
+        }
+
+        .tablecount {
+
+            margin: 34px auto auto auto;
+            width: 300px;
+
+        }
+
+        .tableinput {
+            padding: 6px;
+
+        }
+
+        table {
+            width: 300px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="maincontent">
+        <div class="container">
+            <h1>Stop Watch</h1>
+            <form action="">
+                <input type="button" placeholder="hours" id="hours" class="time" value="00">
+                <input type="button" placeholder="minutes" id="minutes" class="time" value="00">
+                <input type="button" placeholder="seconds" id="seconds" class="time" value="00">
+
+                <input type="button" id="stop" class="startstop" value="stop">
+                <input type="button" id="start" class="startstop" value="start" onclick="startclock();">
+                <input type="button" id="reset" class="startstop" value="reset">
+                <input type="button" id="lap" class="startstop" value="lap">
+            </form>
+
+        </div>
+        <div class="tablecount">
+            <table border="1px" id="tbody">
+                <tr>
+                    <th class="tableinput">Lap count</th>
+                    <th class="tableinput">current Time</th>
+
+                </tr>
+
+            </table>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
